@@ -1,177 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Harricks</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png">
     <link rel="stylesheet" href="styles/indexStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="scripts/script.js"></script>
 </head>
-<body style="background-color: #F5F5F5;">
-    <div class="container-fluid">
-        <div class="bienvenidos row">
-            <nav class="navbar navbar-expand-lg navi">
-                <div class="container-fluid d-flex navbarBox">
-                    <img class="navbar-brand" src="assets/logoHarricks.png" height="auto" width="258px"/>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav options gap-0">
-                            <a class="nav-link opt me-4" href="#">Productos</a>
-                            <a class="nav-link opt me-4" href="#">Sobre nosotros</a>
-                            <a class="nav-link opt me-4" href="#">Contactenos</a>
-                            <a class="nav-link opt me-4 icon"><i class="fa-solid fa-cart-shopping"></i></a>
-                            <a class="nav-link opt me-4 icon iconUsr"><i class="fa-solid fa-user"></i></a>
-                        </div>
-                    </div>
+<body class="container-fluid">
+<div class="row header d-flex justify-content-center align-items-start gap-0 ">
+    <nav class="navbar navbar-expand-lg navi" style="padding-block: 0">
+        <div class="container-fluid d-flex align-content-center justify-content-between navbarBox">
+            <a href="../landing/index.html"><img class="navbar-brand" src="../assets/logoHarricks.png" alt="" height="auto" width="258px"></a>
+            <button class="navbar-toggler" style="margin-right: 3rem" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-list" id="navbarNavAltMarkup" style="flex-grow: 0;">
+                <div class="navbar-nav options pt-0 d-flex justify-content-center align-items-center">
+                    <a class="nav-link opt mx-auto text-center" href="../productos/productos.html">Productos</a>
+                    <a class="nav-link opt mx-auto text-center" href="#">Sobre nosotros</a>
+                    <a class="nav-link opt mx-auto text-center" href="#">Contacto</a>
+                    <a class="nav-link opt mx-auto icon text-center"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="nav-link opt mx-auto icon text-center" href="../login/login.html"><i class="fa-solid fa-user"></i></a>
                 </div>
-            </nav>
-            <div class="center">
-                <div class="col-lg-7 order-lg-1 order-2 text-center text-lg-start">
-                    <div class="d-flex textGrandeCont">
-                        <span class="textGrande">Bienvenidos al hogar del <span style="color: #ED6A0B!important;">comelón</span></span>
-                    </div>
-                    <div class="textPeqCont">
-                        <span class="textPeq" style="color: #7D411D;">Prueba nuestros deliciosos productos seleccionados por el mismísimo <span style="color: #ED6A0B!important;">comelón de harrick's</span></span>
-                    </div>
-                </div>
-                <div class="col-lg-5 order-lg-2 order-1 text-center text-lg-start">
-                    <img src="assets/comelon.png" alt="" id="imgComelon" height="587" width="auto" style=" transform: scaleX(-1);">
-                </div>
-            </div>
-            <div class="down d-flex justify-content-center">
-                <span style="width: fit-content;" class="text">Baja para ver más</span>
-                <img src="assets/scrollmouse.svg" alt="" height="49.88" width="32.06"/>
             </div>
         </div>
-        <div class="nproductos row">
-            <div class="col-12" style="margin-top: 110px">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center align-items-center flex-column">
-                        <span class="textProduct">Nuestros productos</span>
-                        <span class="textProductPeq">Creados con <span style="color: #ED6A0B">AMOR</span></span>
-                    </div>
-                </div>
-                <div class="row" id="produCont">
-                    <div id="productos" class="col-12 d-flex justify-content-center mt-5">
-                        <div class="producto ghost">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                        <div class="producto">
-                            <div class="nombreProdu px-3">
-                                <span>Surtido de chocolates</span>
-                            </div>
-                            <div class="imagenProdu">
-                                <img src="assets/choco.png" alt="" height="170" width="auto">
-                            </div>
-                            <div class="botonProdu">
-                                <button class="btnOrange">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    </nav>
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-5 d-flex gap-2 flex-column text-start order-md-1 order-2 textContainer" style="max-width: 740px">
+            <span class="textoGrande gradient-orange" style="width: fit-content">Bienvenidos al hogar del <span style="color: #ED6A0B">comelón</span></span>
+            <span class="textoChiquito" style="max-width: 585px; color: #5F3624">Prueba nuestros deliciosos productos seleccionados por el mismisimo <span style="color: #ED6A0B">comelón de harrick's</span></span>
+        </div>
+        <div class="col-12 col-md-5  order-md-2 order-1 d-flex flex-row justify-content-center align-items-center comelonCont" style="position: relative">
+            <img src="../assets/comelon.png" alt="" class="comelon">
+            <div class="textBubble">
             </div>
         </div>
-        <div class="ncertificados">
-
-            </div>
-        <div class="footer">
-
-            </div>
     </div>
+</div>
+<div class="row content d-flex justify-content-center">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center pt-5 flex-column">
+            <div class="d-flex justify-content-center align-items-center pt-5 flex-column">
+                <span class="textoMediano gradient-brown" style="width: fit-content; letter-spacing: 3px">Nuestros productos</span>
+                <span class="textoChiquito gradient-brown" style="width: fit-content">Creados con <span style="color: #ED6A0B">amor</span></span>
+            </div>
+            <div class="">
+
+            </div>
+        </div>
+        <div class="row">Certificados</div>
+        <div class="row">Extras</div>
+    </div>
+</div>
+<div class="row d-flex justify-content-center align-items-start" style="margin-top: 10rem!important;">
+    <div class="rectangle"></div>
+    <footer class="footer">
+        <div style="border-bottom: #350800 2px solid; width: 80%" class="d-flex pb-1 footer-content">
+            <img src="../assets/logoHarricks.png" alt="" class="footer-brand">
+            <div class="d-flex justify-content-center align-items-center social">
+                <a href="https://www.facebook.com/share/e4BcBaMrRXqqzCwQ/"><img src="../assets/facebook.webp" alt="" class="icon-socialF"></a>
+                <a href="https://ldsls.es/ptemO"><img src="../assets/whatsapp.svg" alt="" class="icon-social"></a>
+                <a href="https://www.instagram.com/asococoaventas?igsh=MTZ4MHpwcjllZ2I2dg=="><img src="../assets/instagram.svg" alt="" class="icon-social"></a>
+            </div>
+        </div>
+    </footer>
+</div>
 <script src="https://kit.fontawesome.com/491d7a6bcc.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
