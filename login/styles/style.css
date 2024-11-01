@@ -98,6 +98,7 @@
         width: 80vw;
     }
 }
+
 @media screen and (max-width: 990px) {
     .login-container{
         display: flex!important;
@@ -107,6 +108,7 @@
     }
     #formu{
         padding: 0!important;
+        width: 70%;
     }
     .logoHarricksCont{
         border:none;
@@ -120,6 +122,12 @@
     }
     .login-box{
         height: 100vh;
+    }
+}
+@media screen and (max-width: 600px){
+    #formu{
+        padding: 0!important;
+        width: 80%;
     }
 }
 label{

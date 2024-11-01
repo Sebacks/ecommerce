@@ -25,21 +25,20 @@
     border: 3px solid var(--orange-light-color);
 }
 .textoGrande{
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 75px;
 }
 .textoMediano{
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 800;
 }
 .textoChiquito{
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    font-size: 1.2rem;
     font-weight: 500;
+    max-width: 700px;
 }
 .gradient-orange{
     background: linear-gradient(90deg, var(--dark-chocolate-color) 15%, var(--orange-dark-color) 50%);
@@ -65,7 +64,7 @@
 
 @media  screen and (max-width: 1000px){
     .textoGrande{
-        font-size: 3rem;
+        font-size: 2.4rem;
         line-height: normal;
 
     }
@@ -85,13 +84,13 @@
         text-align: center;
     }
     .textoMediano{
-        font-size: 1.4rem;
+        font-size: 2rem;
         line-height: normal;
     }
 }
 @media  screen and (max-width: 600px){
     .textoGrande{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
     }
     .textoChiquito{
@@ -202,265 +201,183 @@
 
 /*INICIO HEADER*/
 .header{
-    height: 908px;
+    height: fit-content;
     background-color: var(--background-color);
     background-image: url("../../assets/texturaCacao.png");
     background-size: 50%;
+    padding-bottom: 30px;
 }
-.comelon{
-    transform: scaleX(-1);
-    width: 448px;
-    height: auto;
-}
-@media screen and (max-width: 1000px) {
-    .comelon{
-        width: 300px!important;
-    }
+@media screen and (max-width: 990px){
     .header{
-        height: fit-content;
-        padding-bottom: 3rem;
-    }
-    .textContainer{
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width: 600px) {
-    .comelon{
-        width: 210px!important;
-    }
-    .comelonCont{
-        margin-top: 30px!important;
-        margin-bottom: 30px!important;
-        margin-left: -2rem!important;
-        padding:0!important;
-    }
-    .textBubble{
-        width: 70px;
-    }
-    .textBubble:after{
-        font-size: 15px;
-        font-family: 'Atma', system-ui;
-        font-weight: 550;
-        color: #ac5714 !important;
-        text-transform: uppercase!important;
-        content: "Que ven mis ojos?";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        background-color: var(--background-color-focus)!important;
-        height: 70px;
-        width: 170px;
-        border-radius: 50%;
-        transform: translateX(-40px) translateY(-110px);
-        border: solid #c67700 4px !important ;
-    }
-    .textBubble:before{
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 70px solid transparent;
-        border-bottom: 40px solid #c67700 !important;
-        transform: rotate(-20deg) translateY(-100px) translateX(-30px);
-        border-radius: 50%;
-    }
-    .header{
-        height: fit-content;
-        padding-bottom: 70px;
+        padding-bottom: 0;
     }
 }
 /*FIN HEADER*/
 
 /*INICIO CONTENT*/
-.certificadosCont{
-    background-color: #B87F5B;
-    background-image: url("../../assets/texturaCacao.png");
-
-}
-.certificadosBox{
-    border-radius: 2rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
-    height: 520px;
-    padding: 5rem!important;
-    justify-content: space-around;
-}
-.imgCertificado{
-    height: 160px!important;
-    width: 100%!important;
-    max-width: 210px!important;
-    transition: width 0.6s ease-in-out, height 0.6s ease-in-out, border-radius 0.1s ease-in-out;
-    background-color: white;
-    border-radius: 8px;
-    padding: 0!important;
-    flex-direction: column;
-    overflow: hidden;
-}
-.imgCertificadoCont{
+.formCont{
+    padding: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 9px;
-    width: 100%;
-    height: 150px;
 }
-.imgCertificadoText{
+.rightInfo{
+    background-color: var(--background-color);
+    height: 500px;
+    width: 300px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-block: 3rem;
     flex-direction: column;
-}
-.imgCertificadoCont>img{
-    width: auto;
-    height: 120px;
-}
-.tituloCertificado{
-    color: #7D411D;
-    font-weight: 600;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding-top: 10px;
-    text-align: center;
-}
-.descriCertificado{
-    line-height: 18px;
-    text-align: center;
-    width: 80%;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(53, 8, 0, 0.68) !important;
-}
-.imgCertificado:hover>.imgCertificadoText>.tituloCertificado{
-    font-weight: 900!important;
-}
-.imgCertificado:hover{
     justify-content: start;
-    border: 1px solid;
-    border-color: #e3e3e3 !important;
-    width: 220px!important;
-    height: 320px!important;
-    padding-block: 15px;
-    border-radius: 16px;
+    gap: 4rem;
+    align-items: center;
 }
-@media screen and (max-width: 1744px) {
-    .imgCertificado:hover{
-        width: 220px!important;
-        height: 160px!important;
-        border:none;
-        border-radius: 16px;
-        padding: 0;
-    }
-    .imgCertificado{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .descriCertificado{
-        display: none;
-    }
-    .imgCertificado:hover>.imgCertificadoText>.tituloCertificado{
-        font-weight: 600!important;
-    }
-    .imgCertificado:hover>.imgCertificadoCont{
-        padding-top: 0;
-    }
-    .imgCertificado:hover>.imgCertificadoText>.descriCertificado{
-        display: none;
-    }
+.infoContactoText{
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    flex-direction: column;
+    color: #5F3624;
 }
-@media screen and (max-width: 1420px) {
-    .certificadosBox{
-        height: fit-content;
-        justify-content: center!important;
-    }
-}
-.categoria:hover{
-    cursor: pointer;
-    background-color: var(--background-color-focus);
-}
-.singProduCont{
-    margin-bottom: 3rem;
-}
-.singProdu{
-    height: fit-content;
-    position: relative;
-    overflow: clip;
-    padding-block: 20px;
+.formMensaje{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+.inputForm{
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 2px!important;
+    border-color: rgba(184, 177, 159, 0.54)!important;
+    color: var(--light-chocolate-color)!important;
+}
+.inputForm:focus{
+    caret-color: rgb(198, 119, 0);
+    background: none!important;
+    border-radius: 0;
+    border: none;
+    border-bottom: solid 2px!important;
+    outline: none;
+    color: var(--light-chocolate-color)!important;
+    border-color: var(--background-color) !important;
+    box-shadow: none!important;
+}
+.rightInfo>span{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #350800;
+}
+.leftInfo{
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 350px;
-    border-radius: 16px;
-    background-color: #FFD9A0;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.5s;
-    background-image: url('../../assets/drip.svg');
-    background-position: 40% 100%;
-    background-repeat: no-repeat;
-    background-size: 900% ;
-    gap: 1.2rem;
-    padding-inline: 4px;
+    width: 600px;
+    border: 5px solid var(--background-color);
+    height: 550px;
 }
-.singProdu:hover{
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.35);
-    cursor:pointer;
+.leftInfo>span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #350800;
+    margin-bottom: 50px;
 }
-.nombreProdu{
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: var(--orange-dark-color)!important;
-    text-align: start;
-    width: 215px;
-    text-wrap: wrap;
-    letter-spacing: 2px;
-}
-.descriProdu{
-    font-size: 12px;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: var(--white-color)!important;
-    text-align: start;
-    width: 200px;
-    text-wrap: wrap;
-    letter-spacing: 2px;
+textarea.inputForm{
+    resize: none;
+    margin-bottom: 5rem;
 }
 .btnContacto{
-    width: 120px;
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
-    background-color: var(--orange-light-color);
+    background-color: transparent;
     color: var(--dark-chocolate-color);
     border: none;
     outline: none;
+    font-size: 1.7rem;
 }
-.productCont{
-    justify-content: flex-start;
+.about-cont-top{
+    background-color: #ffdaa3;
+    padding: 0!important;
+    background-image: url("../../assets/cocoaplace.png");
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
 }
 .btnContacto:hover{
     cursor: pointer;
-    background-color: var(--background-color-focus);
+    color: var(--orange-light-color);
 }
-.icon-heart:hover{
-    cursor: pointer;
-    scale: 1.02;
+.textContainer{
+    width: fit-content!important;
 }
-.icon-heart{
-    z-index: 10;
-    transition: scale 0.3s ease-in-out;
-    font-size: 25px;
-    position: absolute;
-    top: 8%;
-    right: 8%;
-    transform: translateY(-50%);
-    color: var(--dark-chocolate-color);
+.textContainerTop{
+    background-color: rgba(255, 218, 163, 0.68) !important;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
 }
+@media screen and (max-width: 1430px){
+    .about-cont-top{
+        height: 250px;
+    }
+    .textContainerTop{
+        font-size: 1.2rem!important;
+    }
+}
+@media screen and (max-width: 860px){
+    .formCont{
+        flex-direction: column!important;
+    }
+    .rightInfo{
+        height: fit-content;
+        width: 70%;
+        padding-block: 1rem;
+        gap: 1rem;
+    }
+}
+.upFormInputCont{
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 750px){
+    .rightInfo{
+        width: 80%;
+    }
+    .formMensaje{
+        width: 100%;
 
+    }
+}
+@media screen and (max-width: 630px){
+    .rightInfo{
+        width: 95%;
+    }
+    .leftInfo{
+        width: 98%;
+    }
+    .inputForm{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px){
+    .upFormInputCont{
+        flex-direction: column!important;
+        margin-bottom: 0;
+    }
+    textarea.inputForm{
+        margin-bottom: 1rem;
+    }
+    .btnContacto{
+        font-size: 1.4rem;
+    }
+}
 /*FIN CONTENT*/
 /*INICIO FOOTER*/
 .footer{
