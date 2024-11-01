@@ -430,7 +430,7 @@
     text-wrap: wrap;
     letter-spacing: 2px;
 }
-.btnContacto{
+.btn-product{
     width: 120px;
     height: 40px;
     border-radius: 10px;
@@ -442,7 +442,7 @@
 .productCont{
     justify-content: flex-start;
 }
-.btnContacto:hover{
+.btn-product:hover{
     cursor: pointer;
     background-color: var(--background-color-focus);
 }
